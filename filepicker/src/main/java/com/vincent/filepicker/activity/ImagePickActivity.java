@@ -66,6 +66,7 @@ public class ImagePickActivity extends BaseActivity {
         setContentView(R.layout.vw_activity_image_pick);
 
         mMaxNumber = getIntent().getIntExtra(Constant.MAX_NUMBER, DEFAULT_MAX_NUMBER);
+        mMaxNumber = 5 ;
         isNeedCamera = getIntent().getBooleanExtra(IS_NEED_CAMERA, false);
         isNeedImagePager = getIntent().getBooleanExtra(IS_NEED_IMAGE_PAGER, true);
         isTakenAutoSelected = getIntent().getBooleanExtra(IS_TAKEN_AUTO_SELECTED, true);
